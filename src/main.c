@@ -51,7 +51,7 @@ void delay() {
   while (i--);
 }
 
-void sendColor(unsigned char r, unsigned char g, unsigned char b) {
+void send_color(unsigned char r, unsigned char g, unsigned char b) {
   send_byte(g);
   send_byte(r);
   send_byte(b);
@@ -63,49 +63,49 @@ void main() {
 
     for (i = 0; i < 24; i++) {
       for (j = 0; j <= i; j++) {
-        sendColor(7, 0, 0);
+        send_color(7, 0, 0);
       }
       delay();
     }
 
     for (i = 0; i < 24; i++) {
       for (j = 0; j <= i; j++) {
-        sendColor(7, 7, 0);
+        send_color(7, 7, 0);
       }
       delay();
     }
 
     for (i = 0; i < 24; i++) {
       for (j = 0; j <= i; j++) {
-        sendColor(0, 7, 0);
+        send_color(0, 7, 0);
       }
       delay();
     }
 
     for (i = 0; i < 24; i++) {
       for (j = 0; j <= i; j++) {
-        sendColor(0, 7, 7);
+        send_color(0, 7, 7);
       }
       delay();
     }
 
     for (i = 0; i < 24; i++) {
       for (j = 0; j <= i; j++) {
-        sendColor(0, 0, 7);
+        send_color(0, 0, 7);
       }
       delay();
     }
 
     for (i = 0; i < 24; i++) {
       for (j = 0; j <= i; j++) {
-        sendColor(7, 0, 7);
+        send_color(7, 0, 7);
       }
       delay();
     }
 
     for (i = 0; i < 24; i++) {
       for (j = 0; j <= i; j++) {
-        sendColor(0, 0, 0);
+        send_color(0, 0, 0);
       }
       delay();
     }
@@ -113,56 +113,56 @@ void main() {
     // gradient color
     for (j = 0; j <= 7; j++) {
       for (i = 0; i < 24; i++) {
-        sendColor(j, 0, 0);
+        send_color(j, 0, 0);
       }
       delay();
     }
 
     for (j = 0; j <= 7; j++) {
       for (i = 0; i < 24; i++) {
-        sendColor(7, j, 0);
+        send_color(7, j, 0);
       }
       delay();
     }
 
     for (j = 7; j >= 0; j--) {
       for (i = 0; i < 24; i++) {
-        sendColor(j, 7, 0);
+        send_color(j, 7, 0);
       }
       delay();
     }
 
     for (j = 0; j <= 7; j++) {
       for (i = 0; i < 24; i++) {
-        sendColor(0, 7, j);
+        send_color(0, 7, j);
       }
       delay();
     }
 
     for (j = 7; j >= 0; j--) {
       for (i = 0; i < 24; i++) {
-        sendColor(0, j, 7);
+        send_color(0, j, 7);
       }
       delay();
     }
 
     for (j = 0; j <= 7; j++) {
       for (i = 0; i < 24; i++) {
-        sendColor(j, 0, 7);
+        send_color(j, 0, 7);
       }
       delay();
     }
 
     for (j = 0; j <= 7; j++) {
       for (i = 0; i < 24; i++) {
-        sendColor(7, j, 7);
+        send_color(7, j, 7);
       }
       delay();
     }
 
     for (j = 7; j >= 0; j--) {
       for (i = 0; i < 24; i++) {
-        sendColor(j, j, j);
+        send_color(j, j, j);
       }
       delay();
     }
